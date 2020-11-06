@@ -1,0 +1,27 @@
+<web-app xmlns="http://java.sun.com/xml/ns/j2ee"
+  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xsi:schemaLocation="http://java.sun.com/xml/ns/j2ee/web-app_2_4.xsd"
+  version="2.4">
+
+  <servlet>
+    <servlet-name>DBPortal</servlet-name>
+    <servlet-class>com.ProductInfoWebApp.web.MyController</servlet-class>
+  </servlet>
+
+  <servlet-mapping>
+    <servlet-name>DBPortal</servlet-name>
+    <url-pattern>/submission</url-pattern>
+  </servlet-mapping>
+
+  <servlet>
+    <servlet-name>DBReturn</servlet-name>
+    <servlet-class>com.ProductInfoWebApp.web.MySearcher</servlet-class>
+  </servlet>
+
+  <servlet-mapping>
+    <servlet-name>DBReturn</servlet-name>
+    <url-pattern>/search-results</url-pattern>
+  </servlet-mapping>
+
+
+</web-app>
