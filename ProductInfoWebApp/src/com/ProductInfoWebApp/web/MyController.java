@@ -57,10 +57,7 @@ public class MyController extends HttpServlet {
         }
       } catch (Exception z) {
         out.println(e.getMessage());
-
       }
-
     }
-
   }
 }
