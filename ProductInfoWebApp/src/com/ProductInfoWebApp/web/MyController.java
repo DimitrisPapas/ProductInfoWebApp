@@ -43,7 +43,7 @@ public class MyController extends HttpServlet {
 
       try {
         Class.forName("com.mysql.jdbc.Driver");
-        con = DriverManager.getConnection("jdbc:mysql://localhost:3306/ProductInfoWebApp", "root", "melenemarika"); //TODO:gia onoma tou 8eou allaxto password prin mpei github!
+        con = DriverManager.getConnection("jdbc:mysql://localhost:3306/ProductInfoWebApp", dbusername, dbpassword);
         prs = con.prepareStatement(query);
         ResultSet rs = prs.executeQuery();
 
